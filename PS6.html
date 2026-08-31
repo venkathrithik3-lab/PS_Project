@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic HTML Js</title>
+    </head>
+    <body>
+        <!--Greetings-->
+        <button onclick="greetUser()">Say Hello</button>
+        <h3 id="Greeting"></h3>
+        <select id="DayTime">
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+            <option value="Night">Night</option>
+        </select>
+        <button onclick="greetUser()">Select time</button>
+        <h3 id="timeGreet"></h3>
+        <!-- Temperature Converter -->
+        <h1>Temperature Converter</h1>
+        <input type="number" id="Temperature" placeholder="Enter temperature">
+        <select id="fromUnit">
+            <option value = "C">Celcius</option>
+            <option value = "F">Fahrenheit</option>
+            <option value = "K">Kelvin</option>
+        </select>
+        <span>to</span>
+        <select id="toUnit">
+            <option value = "C">Celcius</option>
+            <option value = "F">Fahrenheit</option>
+            <option value = "K">Kelvin</option>
+        </select>
+        <br>
+        <button onclick="convertTemperature()">Convert</button>
+        <h3 id="temperatureResult">Result:</h3>
+        <script src="../Java Script/PS6.js"></script>
+        <!--Simple and Compound Interest Calculator-->
+        <h1>Simple and Compound Interest Calculator</h1>
+        <input type="number" id="Principal" placeholder="Enter Principal Amount">
+        <br>
+        <input type="number" id="Rate" placeholder="Enter Rate of Interest">
+        <br>
+        <input type="number" id="Time" placeholder="Enter Time in Years">
+        <br>
+        <input type="number" id="CompoundFrequency" placeholder="Enter Compound Frequency (only for Compound Interest)">
+        <br>
+        <button onclick="simpleInterest()">Calculate Simple Interest</button>
+        <button onclick="compoundInterest()">Calculate Compound Interest</button>
+        <h3 id="interestResult">Result:</h3>
+        <!--Force Calculator-->
+        <h1>Force Calculator</h1>
+        <input type="number" id="Mass" placeholder="Enter Mass">
+        <br>
+        <input type="number" id="Acceleration" placeholder="Enter Acceleration">
+        <br>
+        <button onclick="calculateForce()">Calculate Force</button>
+        <h3 id="forceResult">Result:</h3>
+    </body>
+</html>
