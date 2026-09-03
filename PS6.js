@@ -14,13 +14,6 @@ function greetUser(){
         document.getElementById("timeGreet").innerHTML="Good Night!";
     }
 }
-/*<h1>Force Calculator</h1>
-        <input type="number" id="Mass" placeholder="Enter Mass">
-        <br>
-        <input type="number" id="Acceleration" placeholder="Enter Acceleration">
-        <br>
-        <button onclick="calculateForce()">Calculate Force</button>
-        <h3 id="forceResult">Result:</h3>*/
 function convertTemperature() {
     var temperature = parseFloat(document.getElementById("Temperature").value);
     var from = document.getElementById("fromUnit").value;
@@ -74,4 +67,21 @@ function calculateForce(){
     var acceleration=parseFloat(document.getElementById("Acceleration").value);
     var force=mass*acceleration;
     document.getElementById("forceResult").innerHTML="Result: Force = "+force;
+}
+function convertCurrency(){
+    var amount = parseFloat(document.getElementById("Currency").value);
+    var fromCu = document.getElementById("fromCurrency").value;
+    var toCu = document.getElementById("toCurrency").value;
+    if(fromCu==toCu){
+        var money = amount;
+        document.getElementById("CurrencyResult").innerHTML="Result: "+money+" "+toCu;
+    }
+    if(fromCu === "USD" && toCu==="INR"){
+        var money = amount*94.53;
+        document.getElementById("CurrencyResult").innerHTML="Result: "+money+" INR";
+    }
+    if(fromCu === "INR" && toCu==="USD"){
+        var money = amount/94.53;
+        document.getElementById("CurrencyResult").innerHTML="Result: "+money+" USD";
+    }
 }

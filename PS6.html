@@ -1,5 +1,5 @@
-<!--Student Profile - give me about me profile generator using variables and typeof
-Currency converter-->
+<!--Student Profile - give me about me profile generator using variables and typeof-->
+<!--Currency converter-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -57,5 +57,20 @@ Currency converter-->
         <br>
         <button onclick="calculateForce()">Calculate Force</button>
         <h3 id="forceResult">Result:</h3>
+        <!--Currency Converter:USD & INR-->
+        <h1>Currency Converter of USD & INR</h1>
+        <input type =number id="Currency" placeholder="Enter currency value">
+        <br>
+        <select id="fromCurrency">
+            <option value="USD">United States Dollar</option>
+            <option value="INR">Indian National Ruppee</option>
+        </select>
+        <select id="toCurrency">
+            <option value="USD">United States Dollar</option>
+            <option value="INR">Indian National Ruppee</option>
+        </select>
+        <br>
+        <button onclick="convertCurrency()">Convert</button>
+        <h3 id="CurrencyResult">Result:</h3>
     </body>
 </html>
