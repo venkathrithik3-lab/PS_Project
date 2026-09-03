@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student information</title>
+</head>
+
+<body>
+    <h1>Student table Information</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+    <!-- Write your code here -->
+<script>
+    // Write your code here 
+    const jsonData = `[
+        {
+            "name": "Ravi",
+            "age": 21,
+            "course": "Computer Science"
+        },
+        {
+            "name": "Priya",
+            "age": 22,
+            "course": "Artificial Intelligence"
+        },
+        {
+            "name": "Arjun",
+            "age": 20,
+            "course": "Data Science"
+        }
+    ]`;
+    const students = JSON.parse(jsonData);
+    const table=document.getElementById("studentTable");
+    for(const student of students){
+        const row = document.createElement("tr");
+        row.innerHTML = `
+        <td>${student.name}</td>
+        <td>${student.age}</td>
+        <td>${student.course}</td>
+        `;
+        table.appendChild(row);
+    }
+</script>    
+
+</body>
+</html>
